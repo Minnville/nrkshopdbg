@@ -78,12 +78,13 @@ pre {
 }
 
 @media only screen and (max-width: 600px) {
-    .container {
-        width: 100%;
+    /* Специфичные стили для мобильных устройств */
+    pre {
+        font-size: 14px; /* Уменьшаем размер шрифта */
     }
 
-    .header,
-    .footer {
-        font-size: 18px;
+    .box {
+        font-size: 14px; /* Уменьшаем размер шрифта */
+        margin: 5px; /* Уменьшаем внешний отступ */
     }
 }
