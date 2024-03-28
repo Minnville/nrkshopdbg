@@ -7,7 +7,7 @@ document.addEventListener('mousemove', function(e) {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
-    const trailLength = 10; // Длина следа
+    const trailLength = 10;
     const trail = document.querySelector('.trail');
 
     document.addEventListener('mousemove', function (e) {
@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const char = document.createElement('span');
         char.classList.add('trail-char');
         char.textContent = '+';
-        char.style.left = (x - 10) + 'px'; // Устанавливаем позицию символа относительно курсора
-        char.style.top = (y - 10) + 'px'; // Устанавливаем позицию символа относительно курсора
+        char.style.left = (x - 10) + 'px';
+        char.style.top = (y - 10) + 'px';
         trail.appendChild(char);
         setTimeout(() => {
-            char.remove(); // Удаляем символ через некоторое время
-        }, 500); // Устанавливаем задержку появления символа
+            char.remove();
+        }, 500);
     });
 });
