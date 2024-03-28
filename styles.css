@@ -1,0 +1,78 @@
+body {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: monospace;
+    user-select: none; /* Запрет выделения текста */
+}
+
+.box {
+    font-size: 23px;
+    display: inline-block;
+    margin-right: 20px; /* Добавляем небольшой отступ между боксами */
+    margin-bottom: auto;
+}
+
+
+.trail {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.trail-char {
+    position: fixed;
+    font-family: monospace;
+    font-size: 20px;
+    color: white; /* Прозрачный красный цвет */
+    pointer-events: none;
+    opacity: 0;
+    animation: fadeIn 0.5s forwards; /* Анимация появления */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 1; /* Появление с нулевой прозрачностью */
+    }
+    to {
+        opacity: 0; /* Прозрачность убывает к конечному значению */
+    }
+}
+
+@keyframes colorChange {
+    0% {
+        color: red; /* Начальный цвет */
+    }
+    25% {
+        color: blue; /* Цвет через 25% анимации */
+    }
+    50% {
+        color: green; /* Цвет через 50% анимации */
+    }
+    75% {
+        color: orange; /* Цвет через 75% анимации */
+    }
+    100% {
+        color: red; /* Возврат к начальному цвету */
+    }
+}
+
+@keyframes flicker {
+    0%, 100% {
+        opacity: 0; /* Скрыть символы */
+    }
+    50% {
+        opacity: 1; /* Показать символы */
+    }
+}
+
+pre {
+    animation: flicker 2s linear infinite; /* Анимация мерцания */
+    animation-delay: 0s; /* Начало анимации сразу */
+}
+
+pre {
+    animation: colorChange 5s linear infinite; /* Анимация изменения цвета */
+    animation-delay: 0s; /* Начало анимации сразу */
+}
