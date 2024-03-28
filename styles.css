@@ -3,13 +3,13 @@ body {
     background-color: black;
     color: white;
     font-family: monospace;
-    user-select: none; /* Запрет выделения текста */
+    user-select: none;
 }
 
 .box {
     font-size: 23px;
     display: inline-block;
-    margin-right: 20px; /* Добавляем небольшой отступ между боксами */
+    margin-right: 20px;
     margin-bottom: auto;
 }
 
@@ -25,69 +25,68 @@ body {
     position: fixed;
     font-family: monospace;
     font-size: 20px;
-    color: white; /* Прозрачный красный цвет */
+    color: white;
     pointer-events: none;
     opacity: 0;
-    animation: fadeIn 0.5s forwards; /* Анимация появления */
+    animation: fadeIn 0.5s forwards;
 }
 
 @keyframes fadeIn {
     from {
-        opacity: 1; /* Появление с нулевой прозрачностью */
+        opacity: 1;
     }
     to {
-        opacity: 0; /* Прозрачность убывает к конечному значению */
+        opacity: 0;
     }
 }
 
 @keyframes colorChange {
     0% {
-        color: red; /* Начальный цвет */
+        color: red;
     }
     25% {
-        color: blue; /* Цвет через 25% анимации */
+        color: blue;
     }
     50% {
-        color: green; /* Цвет через 50% анимации */
+        color: green;
     }
     75% {
-        color: orange; /* Цвет через 75% анимации */
+        color: orange;
     }
     100% {
-        color: red; /* Возврат к начальному цвету */
+        color: red;
     }
 }
 
 @keyframes flicker {
     0%, 100% {
-        opacity: 0; /* Скрыть символы */
+        opacity: 0;
     }
     50% {
-        opacity: 1; /* Показать символы */
+        opacity: 1;
     }
 }
 
 pre {
-    animation: flicker 2s linear infinite; /* Анимация мерцания */
-    animation-delay: 0s; /* Начало анимации сразу */
+    animation: flicker 2s linear infinite;
+    animation-delay: 0s;
 }
 
 pre {
-    animation: colorChange 5s linear infinite; /* Анимация изменения цвета */
-    animation-delay: 0s; /* Начало анимации сразу */
+    animation: colorChange 5s linear infinite;
+    animation-delay: 0s;
 }
 
 @media only screen and (max-width: 768px) {
-    /* Специфичные стили для мобильных устройств */
     pre {
-        font-size: 14px; /* Уменьшаем размер шрифта */
+        font-size: 14px;
         text-align: center;
     }
 
     .box {
         text-align: center;
-        font-size: 20px; /* Уменьшаем размер шрифта */
-        margin: 3px; /* Уменьшаем внешний отступ */
+        font-size: 20px;
+        margin: 3px;
     }
 
     .font {
@@ -95,7 +94,7 @@ pre {
     }
 
     .top pre {
-        font-size: 5px; /* Уменьшаем размер шрифта для мобильных устройств */
-        margin: 5px; /* Уменьшаем внешние отступы */
+        font-size: 5px;
+        margin: 5px;
     }
 }
