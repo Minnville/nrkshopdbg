@@ -78,8 +78,12 @@ pre {
 }
 
 @media only screen and (max-width: 600px) {
-    /* Ваш стиль CSS для мобильных устройств */
-    body {
-        font-size: 14px;
+    .container {
+        width: 100%;
+    }
+
+    .header,
+    .footer {
+        font-size: 18px;
     }
 }
