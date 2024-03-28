@@ -76,3 +76,10 @@ pre {
     animation: colorChange 5s linear infinite; /* Анимация изменения цвета */
     animation-delay: 0s; /* Начало анимации сразу */
 }
+
+@media only screen and (max-width: 600px) {
+    /* Ваш стиль CSS для мобильных устройств */
+    body {
+        font-size: 14px;
+    }
+}
