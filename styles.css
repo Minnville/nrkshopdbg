@@ -4,6 +4,7 @@ body {
     color: white;
     font-family: monospace;
     user-select: none;
+    overflow-x: hidden;
 }
 
 .box {
@@ -13,6 +14,11 @@ body {
     margin-bottom: auto;
 }
 
+.rate {
+    position: relative;
+    left: 10px;
+    top: -70px;
+}
 
 .trail {
     position: fixed;
@@ -67,12 +73,12 @@ body {
     }
 }
 
-pre {
+pre, div {
     animation: flicker 2s linear infinite;
     animation-delay: 0s;
 }
 
-pre {
+pre, div {
     animation: colorChange 5s linear infinite;
     animation-delay: 0s;
 }
