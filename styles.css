@@ -73,12 +73,12 @@ body {
     }
 }
 
-pre, div {
+pre, .rate {
     animation: flicker 2s linear infinite;
     animation-delay: 0s;
 }
 
-pre, div {
+pre, .rate {
     animation: colorChange 5s linear infinite;
     animation-delay: 0s;
 }
