@@ -15,9 +15,15 @@ body {
 }
 
 .rate {
-    position: relative;
-    left: 10px;
-    top: -70px;
+    position: absolute;
+    left: 44%;
+    top: 88%;
+}
+
+.rate2 {
+    position: absolute;
+    left: 31%;
+    top: 91%;
 }
 
 .trail {
@@ -73,12 +79,12 @@ body {
     }
 }
 
-pre, .rate {
+pre, .rate, .rate2 {
     animation: flicker 2s linear infinite;
     animation-delay: 0s;
 }
 
-pre, .rate {
+pre, .rate, .rate2 {
     animation: colorChange 5s linear infinite;
     animation-delay: 0s;
 }
