@@ -79,12 +79,12 @@ body {
     }
 }
 
-pre, .rate, .rate2 {
+pre, .rate, .rate2, div {
     animation: flicker 2s linear infinite;
     animation-delay: 0s;
 }
 
-pre, .rate, .rate2 {
+pre, .rate, .rate2, div {
     animation: colorChange 5s linear infinite;
     animation-delay: 0s;
 }
@@ -101,12 +101,12 @@ pre, .rate, .rate2 {
         margin: 3px;
     }
 
-    .font {
+    div {
         font-size: 14px;
     }
 
-    .top pre {
-        font-size: 5px;
+    .top, pre {
+        font-size: 6px;
         margin: 5px;
     }
 }
