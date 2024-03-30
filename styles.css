@@ -5,7 +5,29 @@ body {
     font-family: monospace;
     user-select: none;
     overflow-x: hidden;
+
 }
+
+.bgvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 110%;
+    z-index: -9999;
+    opacity: 1%;
+  }
+
+  .bgvideo2 {
+    position: absolute;
+    right: 685px;
+    bottom: 0;
+    width: 50%;
+    height: 110%;
+    z-index: -9999;
+    opacity: 1%;
+    transform: scale(-1, 1);
+  }
 
 .box {
     font-size: 23px;
@@ -79,12 +101,12 @@ body {
     }
 }
 
-pre, .tex {
+pre, .rate, .rate2, div {
     animation: flicker 2s linear infinite;
     animation-delay: 0s;
 }
 
-pre, .tex {
+pre, .rate, .rate2, div {
     animation: colorChange 5s linear infinite;
     animation-delay: 0s;
 }
